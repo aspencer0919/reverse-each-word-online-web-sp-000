@@ -14,9 +14,9 @@
 #**Hint:** *How can we reverse each word and return those altered words? Remember that* `.each` *returns the original array but other enumerators don't.*
 
 def reverse_each_word(sentence)
+  string = sentence.strip(" ")
   backwards = []
-  sentence.strip(/\W+/)
-  sentence.each do |words|
+  string.each do |words|
     backwards << words.reverse
   end
   backwards
